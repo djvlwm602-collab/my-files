@@ -9,8 +9,8 @@ import path from 'path';
 import Image from 'next/image';
 import styles from './page.module.css';
 
-// 어드민 수정 사항을 즉시 반영하기 위해 매 요청마다 서버 렌더링
-export const dynamic = 'force-dynamic';
+// 어드민 수정 사항을 반영하기 위해 빌드 시점에 정적 생성
+// export const dynamic = 'force-dynamic'; // 정적 배포를 위해 주석 처리
 
 /** content.json 타입 정의 */
 interface ContentData {
