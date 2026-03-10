@@ -36,6 +36,8 @@ function getContent(): ContentData {
 export default function Home() {
   const content = getContent();
   const { hero, services, pricing } = content;
+  // GitHub Pages는 /my-files 서브경로에 배포되므로 이미지 src에 basePath를 수동으로 접두사 적용
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <main className={styles.main}>
@@ -43,7 +45,7 @@ export default function Home() {
       <section className={styles.heroSection}>
         <div className={styles.heroBg}>
           <Image
-            src={hero.imageUrl}
+            src={basePath + hero.imageUrl}
             alt="Humanoid Robot Household"
             fill
             style={{ objectFit: 'cover' }}
@@ -67,7 +69,7 @@ export default function Home() {
             {services.map((service) => (
               <div key={service.id} className={styles.card}>
                 <div className={styles.cardImageWrapper}>
-                  <Image src={service.imageUrl} alt={service.title} fill style={{ objectFit: 'cover' }} />
+                  <Image src={basePath + service.imageUrl} alt={service.title} fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={styles.cardContent}>
                   <h3>{service.title}</h3>
