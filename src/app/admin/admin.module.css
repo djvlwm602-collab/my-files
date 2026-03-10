@@ -1,0 +1,218 @@
+.adminContainer {
+  min-height: 100vh;
+  background-color: var(--bg-base);
+  padding: 40px;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+}
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-base);
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.adminHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adminHeader h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.saveButton {
+  background-color: var(--toss-blue);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.saveButton:hover {
+  background-color: var(--toss-blue-hover);
+}
+
+.saveButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 저장 결과 토스트 메시지 */
+.toast {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.toast[data-type='success'] {
+  background: rgba(49, 130, 246, 0.15);
+  color: var(--toss-blue);
+  border: 1px solid rgba(49, 130, 246, 0.3);
+}
+
+.toast[data-type='error'] {
+  background: rgba(239, 68, 68, 0.15);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.adminMain {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.configSection {
+  background: var(--bg-elevated);
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-subtle);
+}
+
+.configSection h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: var(--toss-blue);
+}
+
+.helpText {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  margin-top: 8px;
+}
+
+/* ─────────────────────────────────────────
+   이미지 업로드 필드
+───────────────────────────────────────── */
+.imageUploadField {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.imageLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.imagePreviewWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.uploadingOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.uploadButton {
+  width: fit-content;
+  padding: 10px 20px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.uploadButton:hover {
+  border-color: var(--toss-blue);
+  color: var(--toss-blue);
+}
+
+.uploadButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 서비스 카드 이미지 행 */
+.serviceImageRow {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.serviceImageRow:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.serviceLabel {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 12px;
+}

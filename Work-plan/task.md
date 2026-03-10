@@ -1,0 +1,30 @@
+# 작업 목록: 휴머노이드 로봇 랜딩 페이지 및 어드민
+
+- [x] 프로젝트 초기화
+    - [x] task.md 및 implementation_plan.md 생성
+    - [x] Next.js 프로젝트 (App Router) 초기화
+    - [x] 기본 스타일 (Vanilla CSS) 및 설정 완료
+- [x] 랜딩 페이지 구현 (단계별)
+    - [x] 섹션 1: 히어로 섹션 (img01.png 배경 및 딤 효과)
+    - [x] 섹션 2: 3단 카드 서비스 소개 (모닝콜, 가사 케어, 댄스타임)
+    - [x] 섹션 3: 요금제 섹션 (프리미엄 디자인)
+    - [x] content.json 동적 로딩으로 전환 (하드코딩 제거)
+- [x] 어드민 페이지 구현
+    - [x] `/admin` 경로 생성
+    - [x] 텍스트 및 이미지 수정 기능 구현
+    - [x] `app/api/content/route.ts` 구현 (GET/POST → data/content.json)
+    - [x] `data/content.json` 초기 구조 생성
+    - [x] 어드민 저장 시 API 호출 연동 (Mock → 실제 API)
+- [x] AI 연동
+    - [x] OpenRouter API (Opus 4.6) 연동 기반 마련
+    - [x] 프롬프트 수정 기능 구현
+- [x] 디자인 시스템
+    - [x] globals.css Toss 다크 테마 컬러 팔레트 및 디자인 토큰 적용
+    - [x] layout.tsx 한글 폰트(Pretendard) 적용, lang="ko" 설정
+    - [x] page.module.css 다크 테마 반영
+    - [x] admin.module.css 다크 테마 통일
+- [ ] 배포 및 최종 마무리
+    - [ ] OPENROUTER_API_KEY Vercel 환경변수 등록
+    - [ ] Vercel 배포 후 외부 접근 테스트
+    - [x] Vercel 배포 준비 완료
+    - [x] 2개 URL (랜딩, 어드민) 구성 완료

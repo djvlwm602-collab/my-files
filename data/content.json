@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "title": "청소 고민? 이자뿌쓰요~",
+    "subtitle": "월 99만원으로 늘 즐거운 우리 집.",
+    "imageUrl": "/images/img01.png"
+  },
+  "services": [
+    {
+      "id": "morning",
+      "title": "모닝콜 서비스",
+      "description": "\"일어나라 휴먼\" 산뜻하게 모닝콜 해줘요",
+      "imageUrl": "/images/img02.png"
+    },
+    {
+      "id": "care",
+      "title": "자연 친화적 가사 케어",
+      "description": "휴머노이드가 집안을 하나의 '작은 숲'처럼 가꾸며, 식물과 교감해요",
+      "imageUrl": "/images/img03.png"
+    },
+    {
+      "id": "dance",
+      "title": "댄스타임",
+      "description": "가사노동 완료 후에는 테크노댄스를 춰요",
+      "imageUrl": "/images/img04.png"
+    }
+  ],
+  "pricing": {
+    "badge": "BEST CHOICE",
+    "planName": "즐거운 우리 집 플랜",
+    "price": "월 99",
+    "unit": "만원",
+    "features": [
+      "24시간 휴머노이드 가사 서비스",
+      "모닝콜 및 데일리 케어",
+      "식물 관리 및 실내 숲 가꾸기",
+      "완료 후 댄스타임 세레머니",
+      "정기 소프트웨어 업데이트"
+    ],
+    "ctaText": "지금 바로 시작하기"
+  },
+  "aiPrompt": "즐겁게 집안일하는 흥 많은 로봇"
+}
