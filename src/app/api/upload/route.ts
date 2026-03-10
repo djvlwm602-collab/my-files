@@ -9,6 +9,9 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// 정적 export(GitHub Pages) 호환을 위한 설정
+export const dynamic = 'force-static';
+
 export async function POST(request: Request) {
   try {
     const formData = await request.formData();

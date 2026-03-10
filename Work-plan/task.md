@@ -16,7 +16,7 @@
     - [x] OpenRouter API (Opus 4.6) 연동 기반 마련
     - [x] 프롬프트 수정 기능 구현
 - [x] 배포 및 최종 마무리
-    - [x] GitHub Pages (gh-pages 브랜치) 배포 완료
+    - [x] GitHub Pages 직접 배포 완료 (master 브랜치 루트 적용)
     - [x] Vercel 배포 준비 및 대체 옵션 제공
     - [x] 2개 URL (랜딩, 어드민) 구성 완료
-    - [x] 정적 빌드 최적화 (basePath 설정)
+    - [x] 정적 빌드 최적화 및 인덱스 처리 완료

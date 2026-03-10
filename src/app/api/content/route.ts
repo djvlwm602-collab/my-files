@@ -9,6 +9,9 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// 정적 export(GitHub Pages) 호환을 위한 설정
+export const dynamic = 'force-static';
+
 // 프로젝트 루트의 data/content.json 절대 경로
 const DATA_PATH = path.join(process.cwd(), 'data', 'content.json');
 
